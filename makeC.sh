@@ -21,9 +21,10 @@ mv ./src/header/*.h ./src/
 
 g++ ./src/index.cpp -o $(pwd)/build/exec.exe
 
+mv ./src/*.h ./src/header/ 
+
 ./build/exec.exe
 
-mv ./src/*.h ./src/header/ 
 " > run.sh
 
 mkdir src
